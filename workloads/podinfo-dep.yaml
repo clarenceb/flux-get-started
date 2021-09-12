@@ -55,10 +55,9 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
-        - --ui-message="Hi, from GitOps"
         env:
         - name: PODINFO_UI_COLOR
-          value: "#000077"
+          value: "#34577c"
         livenessProbe:
           httpGet:
             path: /healthz
