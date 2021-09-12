@@ -7,9 +7,10 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - http:
+  - host: podinfo-cbx.australiaeast.cloudapp.azure.com
+    http:
       paths:
-       - path: /podinfo
+       - path: /
          backend:
           serviceName: podinfo
           servicePort: 9898
