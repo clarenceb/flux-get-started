@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: podinfo-ingress
+  namespace: staging
+  annotations:
+    kubernetes.io/ingress.class: ingress-public
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: podinfo
+          servicePort: 9898
+        path: /
+    host: staging.20.70.225.195.nip.io
