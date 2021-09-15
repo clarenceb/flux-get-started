@@ -14,4 +14,4 @@ spec:
           serviceName: podinfo
           servicePort: 9898
         path: /
-    # host: podinfoxxxxxxxx.australiaeast.cloudapp.azure.com
+    host: demo.20.70.225.195.nip.io
